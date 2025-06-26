@@ -14,9 +14,11 @@ export const Hero = () => {
   </p>
 
   <div className="mt-10 w-full flex justify-center md:justify-start">
-    <button className="text-white bg-[#7C3AED] px-6 py-4 rounded-lg font-bold text-sm md:text-base">
-      Get Obsidian for Windows
-    </button>
+   <a href="https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.10/Obsidian-1.8.10.AppImage" download>
+  <button className="text-white bg-[#7C3AED] px-6 py-4 rounded-lg font-bold text-sm md:text-base">
+    Get Obsidian for Windows
+  </button>
+</a>
   </div>
 </section>
 
