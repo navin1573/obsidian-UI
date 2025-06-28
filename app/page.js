@@ -5,6 +5,7 @@ import { Card } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Board } from "@/components/Board";
 export default function Home() {
+   // checking out
   return (
     <div className="min-h-screen bg-gradient-to-tr from-purple-900 to-gray-950 relative overflow-hidden">
 
