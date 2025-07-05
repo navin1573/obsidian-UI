@@ -1,4 +1,4 @@
-import React from 'react'
+import Reajt from 'react'
 
 export const Hero = () => {
   return (
@@ -10,7 +10,7 @@ export const Hero = () => {
 
   <p className="text-gray-400 text-xl md:text-2xl tracking-wide mt-6 text-center md:text-left w-full">
     The free and flexible app for <br className="hidden md:block" />
-    your private thoughts.
+    your Fuck thoughts.
   </p>
 
   <div className="mt-10 w-full flex justify-center md:justify-start">
