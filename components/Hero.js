@@ -1,5 +1,4 @@
-import Reajt from 'react'
-
+import React from 'react'
 export const Hero = () => {
   return (
     <>

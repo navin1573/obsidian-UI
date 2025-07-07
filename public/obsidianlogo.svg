@@ -6,7 +6,7 @@
 	<radialGradient id="logo-top-right" cx="0" cy="0" gradientTransform="matrix(50 -379 280 37 397.5506198211024 382.7901341997979)" gradientUnits="userSpaceOnUse" r="1">
 		<stop offset="0" stop-color="#fff" stop-opacity=".6"></stop>
 		<stop offset="1" stop-color="#fff" stop-opacity=".1"></stop>
-	</radialGradient>
+	1</radialGradient>
 	<radialGradient id="logo-top-left" cx="0" cy="0" gradientTransform="matrix(-56 -288 149 -29 122.57086774954328 362.9218232330975)" gradientUnits="userSpaceOnUse" r="1">
 		<stop offset="0" stop-color="#fff" stop-opacity=".8"></stop>
 		<stop offset="1" stop-color="#fff" stop-opacity=".4"></stop>
