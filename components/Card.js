@@ -81,7 +81,7 @@ export const Card = () => {
 
         {/* Right Logo Section */}
         <div className="flex flex-col items-center text-center px-6 md:px-[100px]">
-<div className="bg-[#1a1a1a] rounded-2xl p-6 transition-all duration-300 transform hover:scale-120">
+<div className="theme-logo-panel bg-[#1a1a1a] rounded-2xl p-6 transition-all duration-300 transform hover:scale-120">
         <svg
      ref={svgRef}
     xmlns="http://www.w3.org/2000/svg"

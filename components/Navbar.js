@@ -1,9 +1,24 @@
 "use client";
 import React, { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, Moon, Sun } from "lucide-react";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [isLight, setIsLight] = useState(false);
+
+  React.useEffect(() => {
+    const savedTheme = window.localStorage.getItem("obsidian-theme");
+    const shouldUseLight = savedTheme === "light";
+    setIsLight(shouldUseLight);
+    document.documentElement.dataset.theme = shouldUseLight ? "light" : "dark";
+  }, []);
+
+  const toggleTheme = () => {
+    const nextTheme = isLight ? "dark" : "light";
+    setIsLight(!isLight);
+    document.documentElement.dataset.theme = nextTheme;
+    window.localStorage.setItem("obsidian-theme", nextTheme);
+  };
 
   return (
     <nav  className="flex items-center justify-between px-6 py-4 text-white font-bold border-b border-white/10 bg-transparent relative">
@@ -24,9 +39,27 @@ export const Navbar = () => {
         <a className=" text-gray-300 text-sm hover:text-white hover:bg-white/10 hover:rounded-md transition-colors px-4 py-2  " href="https://obsidian.md/Community">Community</a>
         <a className=" text-gray-300 text-sm hover:text-white hover:bg-white/10 hover:rounded-md transition-colors px-4 py-2  " href="https://obsidian.md/Account">Account</a>
         </div>
+        <button
+          type="button"
+          onClick={toggleTheme}
+          aria-label={`Switch to ${isLight ? "dark" : "light"} mode`}
+          title={`Switch to ${isLight ? "dark" : "light"} mode`}
+          className="theme-toggle"
+        >
+          {isLight ? <Moon size={16} /> : <Sun size={16} />}
+        </button>
       </div>
 
-      <div className="md:hidden">
+      <div className="md:hidden flex items-center gap-3">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          aria-label={`Switch to ${isLight ? "dark" : "light"} mode`}
+          title={`Switch to ${isLight ? "dark" : "light"} mode`}
+          className="theme-toggle"
+        >
+          {isLight ? <Moon size={16} /> : <Sun size={16} />}
+        </button>
         <button onClick={() => setOpen(!open)}>
           <Menu size={28} />
         </button>

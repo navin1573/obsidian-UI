@@ -7,7 +7,7 @@ import { Board } from "@/components/Board";
 
 export default function Home() {
   return (
-<div className="min-h-screen bg-gradient-to-tr from-[#000000] to-white/5 relative overflow-hidden">     <svg
+<div className="theme-page min-h-screen bg-gradient-to-tr from-[#000000] to-white/5 relative overflow-hidden">     <svg
      className="absolute inset-0 w-full h-full pointer-events-none mix-blend-screen opacity-20"
      xmlns="http://www.w3.org/2000/svg"
      preserveAspectRatio="none"
